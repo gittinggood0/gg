@@ -1,4 +1,26 @@
 /* page specific styling */
-ol{
-    mergin
+#toc_container{
+    background-color: rgb(5, 4, 5);
+    color:darkslategrey;
+    font-weight: bolder;
+    margin-left: 400px;
+    margin-right: 400px;
+    padding-left: 200px;
+    padding-right: 200px;
+    font-size: 15pt;
+    padding-top: 1px;
+    padding-bottom: 1px;
+
+}
+.chapter{
+    font-size: 20pt;
+    line-height: 75px;
+    color:whitesmoke;
+}
+li{
+    line-height: 25px;
+    
+}
+.subheads{
+    color: whitesmoke;
 }

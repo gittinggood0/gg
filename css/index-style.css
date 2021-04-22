@@ -19,5 +19,15 @@ font-family: 'Source Code Pro', monospace;
     padding-left: 25px;
     padding-right: 25px;
     text-align: center;
-    
+}
+#header,#welcome,#footer{
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top:50px;
+    margin-bottom:50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+a{
+    text-align: center;
 }

@@ -20,6 +20,8 @@ body{ /*general page styles */
     background-color: grey;
     color: white;
     font-weight: bolder;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 #subtitle{ /* header subtitle */
     text-align: center;
@@ -37,17 +39,13 @@ h1{ /* for all h1 on the page */
     text-align: center;
 
 }
-div{ /* all divs */
-    margin-left: 400px;
-    margin-right: 400px;
-}
+
 a{ /* all anchor tags */
-    color: lightblue;
-    text-align: center;
+    color: rgb(52, 179, 221);
 }
 a:hover{ /*anchor hover*/
     color:yellow;
 }
-p,a{/*standardize font for p and anchor tags*/
+p{/*standardize font for p and anchor tags*/
     font-size: 13pt;
 }
