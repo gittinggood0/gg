@@ -1,0 +1,57 @@
+Chapter 0 - About the Author
+Chapter 1 - An introduction to GitHub
+    1.1 - What is GitHub?
+    1.2 - Things you'll need [windows/mac]
+    1.3 - The GitHub Relationship
+    1.4 - Your Hosting Server
+    1R - Review
+    1Q - Quiz
+Chapter 2 - Setting up a repository
+    2.1 - Creating a Repository on GitHub.com
+    2.2 - Cloning a Repository
+        2.2(a) - GitHub Desktop
+        2.2(b) - Terminal
+    2R - Review
+    2Q - Quiz
+Chapter 3 - Basic GitHub Commands
+    3.1 - The big three Commands
+    3.2 - Git Pull [What is it/How to do it]
+        3.2(a) - GitHub Desktop
+        3.2(b) - Terminal
+    3.3 - Git Commit [What is it/How to do it]
+        3.3(a) - GitHub Desktop
+        3.3(b) - Terminal
+    3.4 - Git Push [What is it/How to do it]
+        3.4(a) - GitHub Desktop
+        3.4(b) - Terminal
+    3R - Review
+    3Q - Quiz
+Chapter 4 - Branching
+    4.1 - What is branching?
+    4.2 - Why is branching important?
+    4.3 - How to branch?
+    4R - Review
+    4Q - Quiz
+Chapter 5 - Merge Conflicts
+    5.1 - What are Merge Conflicts
+    5.2 - How to prevent them
+    5.3 - How to fix Merge Conflicts
+        5.3(a) - GitHub Desktop
+        5.3(b) - Terminal
+    5R - Review
+    5Q - Quiz
+Chapter 6 - Mac Tools for accessing server side files
+    6.1 - CyberDuck
+    6.2 - Terminal
+    6R - Review
+    6Q - Quiz
+Chapter 7 - Windows Tools for accessing server side files
+    7.1 - WinSCP
+    7.2 - puTTY
+    7R - Review
+    7Q - Quiz
+Chapter 8 - Commands in Terminal
+    8.1 - Frequently Used
+    8.2 - Useful to know Commands
+    8R - Review
+    8Q - Quiz
