@@ -13,59 +13,79 @@ google api font: https://fonts.google.com/specimen/Source+Code+Pro?query=code
 font-family: 'Source Code Pro', monospace; 
 */
 
-body{ /*general page styles */
+body {
+    /*general page styles */
     font-family: 'Source Code Pro', monospace;
-    color:white;
-    background-color: rgb(92, 78, 78); /*67, 54, 54*/
+    color: white;
+    background-color: rgb(92, 78, 78);
+    /*67, 54, 54*/
 }
-#header{ /* header for each page */
+
+#header {
+    /* header for each page */
     background-color: grey;
     color: white;
     font-weight: bolder;
     padding-bottom: 5px;
     padding-top: 5px;
 }
-#subtitle{ /* header subtitle */
+
+#subtitle {
+    /* header subtitle */
     text-align: center;
 }
 
-h1{ /* for all h1 on the page */
+h1 {
+    /* for all h1 on the page */
     font-size: xx-large;
     text-align: center;
 }
-#footer{ /* page footer */
+
+#footer {
+    /* page footer */
     font-family: 'Source Code Pro', monospace;
     background-color: #877070;
-    color:white;
+    color: white;
     margin-top: 20px;
     text-align: center;
 
 }
 
-a{ /* all anchor tags */
+a {
+    /* all anchor tags */
     color: rgb(52, 179, 221);
 }
-a:hover{ /*anchor hover*/
-    color:yellow;
+
+a:hover {
+    /*anchor hover*/
+    color: yellow;
 }
-p{/*standardize font for p and anchor tags*/
+
+p {
+    /*standardize font for p and anchor tags*/
     font-size: 13pt;
 }
-small{/* for copyright tag at the bottom of footer */
+
+small {
+    /* for copyright tag at the bottom of footer */
     font-family: 'Source Code Pro', monospace;
-color:white;
+    color: white;
 }
-button{/* style all buttons */
+
+button {
+    /* style all buttons */
     background-color: black;
     border: 1pt solid yellow;
     color: white;
     font-size: 12pt;
 }
-#previous{
+
+#previous {
     margin-top: 20px;
     margin-left: 845px;
 }
-button:hover{
+
+button:hover {
     background-color: white;
     color: black;
     border: 2pt solid lightblue;
