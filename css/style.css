@@ -1,4 +1,13 @@
-/*     google api font:
+/*     
+
+Standard styling for all pages
+contains styling for
+- header div
+- footer div
+- <a> <p> <h1> tags
+
+
+google api font:
 font-family: 'Source Code Pro', monospace; 
 */
 
@@ -15,14 +24,7 @@ body{ /*general page styles */
 #subtitle{ /* header subtitle */
     text-align: center;
 }
-#welcome{ /* home page welcome section */
-    background-color: black;
-    color:white;
-    padding-left: 25px;
-    padding-right: 25px;
-    text-align: center;
-    
-}
+
 h1{ /* for all h1 on the page */
     font-size: xx-large;
     text-align: center;
