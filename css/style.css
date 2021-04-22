@@ -51,3 +51,7 @@ a:hover{ /*anchor hover*/
 p{/*standardize font for p and anchor tags*/
     font-size: 13pt;
 }
+small{/* for copyright tag at the bottom of footer */
+    font-family: 'Source Code Pro', monospace;
+color:white;
+}
