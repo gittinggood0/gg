@@ -11,11 +11,6 @@ google api font:
 font-family: 'Source Code Pro', monospace; 
 */
 
-body{ /*general page styles */
-    font-family: 'Source Code Pro', monospace;
-    color:white;
-    background-color: rgb(92, 78, 78); /*67, 54, 54*/
-}
 #header{ /* header for each page */
     background-color: grey;
     color: white;
@@ -53,11 +48,3 @@ p,a{/*standardize font for p and anchor tags*/
 }
 
 /* page specific styling */
-#welcome{ /* home page welcome section */
-    background-color: black;
-    color:white;
-    padding-left: 25px;
-    padding-right: 25px;
-    text-align: center;
-    
-}
