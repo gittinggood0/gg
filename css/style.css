@@ -78,6 +78,7 @@ button {
     border: 1pt solid yellow;
     color: white;
     font-size: 12pt;
+    font-family: 'Source Code Pro', monospace;
 }
 
 #previous {
@@ -89,4 +90,16 @@ button:hover {
     background-color: white;
     color: black;
     border: 2pt solid lightblue;
+}
+.main{
+    background-color: black;
+    color: white;
+    margin-left: 400px;
+    margin-right: 400px;
+    word-wrap:inherit;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 20px;
 }
