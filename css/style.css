@@ -126,3 +126,9 @@ img {
 #toc{
     text-align: center;
 }
+
+#submit{ /*for quiz submit*/
+    display: block;
+    margin-left: 600px;
+    background-color: pink;
+}
