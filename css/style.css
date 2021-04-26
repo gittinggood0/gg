@@ -129,6 +129,24 @@ img {
 
 #submit{ /*for quiz submit*/
     display: block;
-    margin-left: 600px;
-    background-color: pink;
+    margin-left: 500px;
+    margin-top: 50px;
+    background-color: rgb(118, 78, 73);
+    color: bisque;
+}
+#submit:hover{
+    background-color: yellow;
+    color: black;
+}
+li{
+    font-size: 20pt;
+}
+input[type=radio] { /* for radio buttons on quizzes */
+    border: 0px;
+    width: 5%;
+    height: 1.75em;
+}
+.quizH2{
+    font-size: 20pt;
+    margin-top: 50px;
 }
