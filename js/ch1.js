@@ -50,3 +50,22 @@ let questions = [
     correct: "b",
   },
 ];
+function createQuiz() {
+    const quiz = document.querySelector("#h2q");
+    const button = document.querySelector("#submit");
+    let quizCode = "";
+  
+    for (let [index, question] of questions.entries()) { //for each question in our json
+      quizCode += `<h2>${question.question}</h2>`; // make an h2 for the question
+      for (const item in question.answers) { // for each answer choice in answers of our json
+        quizCode += `<p>
+                  <input type="radio" name="Q${index}" id="choice_${item}" value="${item}">
+                  <label for="choice_${item}">${question.answers[item]}</label>
+              </p>`; // make a p tag for the answer choice, as well as a radio button so that we can select the choice
+      }
+    }
+    // stick it into our html page
+    quiz.insertAdjacentHTML("afterbegin", quizCode);
+  }
+  
+  createQuiz(); // so that we can see our quiz
