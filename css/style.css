@@ -151,7 +151,22 @@ input[type=radio] { /* for radio buttons on quizzes */
     width: 5%;
     height: 1.75em;
 }
-.quizH2{
+.quizH2{ /* questions from quizzes */
     font-size: 20pt;
     margin-top: 50px;
+}
+.score{ /* score p tag on quizzes */
+    font-size: 25pt;
+    text-align: center;
+}
+.quizReset{
+    /*quiz reset button*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20pt;
+}
+.qrb{
+    /*quiz reset button div*/
+    text-align: center;
+
 }

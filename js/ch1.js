@@ -112,7 +112,7 @@ form.addEventListener("formdata", (event) => {
   document.querySelector('span').innerHTML = `${totalScore}/${questions.length}`;
 
   // lets show the user a reset button 
-  let resetButtonCode = "<button value=\"reset\" type=\"reset\"> Reset </button>";
+  let resetButtonCode = "<div id=\"qrb\"><button value=\"reset\" type=\"reset\" id=\"quizReset\"> Reset </button></div>";
   
   // show button on html
   submitButton.insertAdjacentHTML('afterend', resetButtonCode);
