@@ -81,9 +81,12 @@ button {
     font-family: 'Source Code Pro', monospace;
 }
 
-#previous {
+#quizSubmit{
+    text-align: center;
+}
+#navbuttons{
+    text-align: center;
     margin-top: 20px;
-    margin-left: 845px;
 }
 
 button:hover {
@@ -128,11 +131,13 @@ img {
 }
 
 #submit{ /*for quiz submit*/
-    display: block;
-    margin-left: 500px;
-    margin-top: 50px;
-    background-color: rgb(118, 78, 73);
-    color: bisque;
+    /* display: block; */
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 20pt;
+    background-color: rgb(244, 244, 244);
+    color: black;
+    font-weight: bolder;
 }
 #submit:hover{
     background-color: yellow;
