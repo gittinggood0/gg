@@ -28,6 +28,7 @@ body {
     font-weight: bolder;
     padding-bottom: 5px;
     padding-top: 5px;
+    margin-bottom: 50px;
 }
 
 #subtitle {
@@ -46,9 +47,10 @@ h1 {
     font-family: 'Source Code Pro', monospace;
     background-color: #877070;
     color: white;
-    margin-top: 20px;
+    margin-top: 50px;
     text-align: center;
-
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 
 a {
@@ -63,13 +65,14 @@ a:hover {
 
 p {
     /*standardize font for p and anchor tags*/
-    font-size: 13pt;
+    font-size: 15pt;
 }
 
 small {
     /* for copyright tag at the bottom of footer */
     font-family: 'Source Code Pro', monospace;
     color: white;
+
 }
 
 button {
@@ -169,4 +172,16 @@ input[type=radio] { /* for radio buttons on quizzes */
     /*quiz reset button div*/
     text-align: center;
 
+}
+ol{
+    margin-top: 50px;
+
+    text-align: center;
+}
+li{
+    line-height: 40px;
+}
+ul{
+    font-size: 10pt;
+    text-align: center;
 }
