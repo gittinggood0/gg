@@ -56,7 +56,7 @@ function createQuiz() {
   let quizCode = "<ol type=\"1\">";
 
   for (let [index, question] of questions.entries()) { //for each question in our json
-    quizCode += `<li> <h2 class="quizH2">${question.question}</h2></li>`; // make an h2 for the question
+    quizCode += `<h2 class="quizH2">${question.question}</h2>`; // make an h2 for the question
     for (const item in question.answers) { // for each answer choice in answers of our json
       quizCode += `<p>
                   <input type="radio" name="Q${index}" id="choice_${item}" value="${item}">
@@ -64,7 +64,7 @@ function createQuiz() {
               </p>`; // make a p tag for the answer choice, as well as a radio button so that we can select the choice
     }
   }
-  quizCode+="</ol>";
+
   // stick it into our html page
   quiz.insertAdjacentHTML("afterend", quizCode);
 }
@@ -97,7 +97,7 @@ form.addEventListener("formdata", (event) => {
   entries.forEach((current, index) => {
 
     h2 = document.querySelector(`h2:nth-of-type(${index + 1})`);
-
+    console.log(h2,index);
     if (current[1] === questions[index].correct) {
       // yay they got it correct
       totalScore += 1;
