@@ -11,3 +11,13 @@ X-Y_<sectionTitleFromTableOfContents>.HTML where X = chapter number and Y = sect
 All pages use style.css
 
 Each page has a main div where all content is to be placed. other divs are header, footer, etc.
+
+NAV BUTTONS
+
+Previous page from a previous chapter format:
+<a href="../0/0-2.html"><button id="previous">Previous Page</button></a>
+<a href="1-2.html"><button id="next">Next Page</button></a>
+
+Next page from a Next chapter format: [on quiz pages]
+<a href="1-R.html"><button id="previous">Previous Page</button></a>
+<a href="../2/2-1.html"><button id="next">Next Page</button></a>
