@@ -25,7 +25,49 @@
         <h3> Cloning a Repository</h3>
         <p> The word "clone" simply means to make a duplicate of an already existing thing. Clones come in many different shapes and sizes, and in our case today, cloning means that we are copying the repository in question from GitHub.com onto our local machine. <BR><BR> <a href="../../pages/1/1-3.html"> Remember the GitHub Triange from 1-3?</a> The idea behind that triangle was to show you the different parts of where your repository will be stored. We are now looking at the bottom-left of that triangle, your local machine. The device that you will code on. The good news is that just like making a repository, it is very easy to clone onto your machine. I will demonstrate 2 ways to do so, via GitHub Desktop [which is simply a cake walk] or for a little more of a challenge [something that you would have to do on a server, like in the bottom-right part of our triangle], on terminal.</p>
         <h4>GitHub Desktop</h4>
-        
+        <ol type="1">
+            <li> Navigate to <a href="https://www.github.com" target="_blank">GitHub.com</a> (or your enterprise
+                version) </li>
+            <li> Find the repository in question that you want to clone. </li>
+            <li> Locate the green "code" button on the homepage of the repository. (see figure 2D).</li>
+            <img id="img2" src="../../img/2-1_newPage.png" alt="new Repository"
+                style="width:100%;max-width:1000px;margin-top: 50px;">
+            <small style="margin-bottom: 50px;">Figure 2D: The green code button should be easy to find. </small>
+            <li> Under the code button, click "Open with GitHub Desktop" (see figure 2E).</li>
+            <img id="img2" src="../../img/2-2_codeButton.png" alt="new Repository"
+                style="width:100%;max-width:500px;margin-top: 50px;">
+            <small style="margin-bottom: 50px;">Figure 2E: The button to click is circled for your convenience.</small>
+            <li> Under the code button, click "Open with GitHub Desktop" (see figure 2F).</li>
+            <img id="img2" src="../../img/2-2_cloning.png" alt="new Repository"
+                style="width:100%;max-width:500px;margin-top: 50px;">
+            <small style="margin-bottom: 50px;">Figure 2F: Make sure that you are storing the repository in the right place.</small>
+            <li> Under the code button, click "Open with GitHub Desktop" (see figure 2G).</li>
+            <img id="img2" src="../../img/2-2_cloned.png" alt="new Repository"
+                style="width:100%;max-width:500px;margin-top: 50px;">
+            <small style="margin-bottom: 50px;">Figure 2G: This is what it will look like once the deed is done, so to speak.</small>
+        </ol>
+        <h4>Terminal [On Mac or Server-Side Only]</h4>
+        <ol type="1">
+            <li> Navigate to <a href="https://www.github.com" target="_blank">GitHub.com</a> (or your enterprise
+                version) </li>
+            <li> Find the repository in question that you want to clone. </li>
+            <li> Locate the green "code" button on the homepage of the repository. (see figure 2D).</li>
+            <li> Copy the HTTPS link from this window (shown in Figure 2E, at the top).</li>
+            <li> Open terminal and navigate [via 'cd' command] to the directory in which you want to clone the repository. </li>
+            <li> In Terminal, type <span class="code">git clone URL</span> and paste your HTTPS url in place of "URL" and click enter. (see Figure 2H)</li>
+            <img id="img2" src="../../img/2-2_cloningTerminal.png" alt="new Repository"
+                style="width:100%;max-width:500px;margin-top: 50px;">
+            <small style="margin-bottom: 50px;">Figure 2H: The format in which you should type the <span class="code">git clone</span> code.</small>
+            <img id="img2" src="../../img/2-2_doneCloning.png" alt="new Repository"
+                style="width:100%;max-width:500px;margin-top: 50px;">
+            <small style="margin-bottom: 50px;">Figure 2I: You'll see something like this after you click enter.</small>
+            <li> Now to see the cloned repository, enter <span class="code">cd yourRepoistoryName</span> and click enter.</li>
+            <li> Make sure that all of your files from github.com are in the folder by typing <span class="code">ls</span> and clicking enter. (see figure 2J)</li>
+            <img id="img2" src="../../img/2-2_doneCloning.png" alt="new Repository"
+                style="width:100%;max-width:500px;margin-top: 50px;">
+            <small style="margin-bottom: 50px;">Figure 2J: You'll see something like this after you do the <span class="code">ls</span> command.</small>
+        </ol>
+        <p>That's all there is too it. See how easy that was? Now everyone else you're collaborating with has to repeat the same steps. Now that we're up and running, we will discuss how to interact with Git in the next chapter.</p>
     </div>
     <div id="navbuttons">
         <a href="2.1.html"><button id="previous">Previous Page</button></a>

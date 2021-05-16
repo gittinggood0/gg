@@ -72,7 +72,8 @@ small {
     /* for copyright tag at the bottom of footer */
     font-family: 'Source Code Pro', monospace;
     color: white;
-
+    font-size: 12pt;
+    margin-bottom: 50px;
 }
 
 button {
@@ -154,6 +155,7 @@ img {
 }
 li{
     font-size: 20pt;
+    margin-top: 50px;
 }
 input[type=radio] { /* for radio buttons on quizzes */
     border: 0px;
@@ -196,4 +198,12 @@ ul{
     margin-left: 40px; 
     margin-right: 40px; 
     text-align: center;
+}
+.code{
+    background-color: rgb(87, 75, 75);
+    color: white;
+}
+.code:hover{
+    background-color: yellow;
+    color: black;
 }
