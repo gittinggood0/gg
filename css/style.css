@@ -86,10 +86,11 @@ button {
     font-family: 'Source Code Pro', monospace;
 }
 
-#quizSubmit{
+#quizSubmit {
     text-align: center;
 }
-#navbuttons{
+
+#navbuttons {
     text-align: center;
     margin-top: 20px;
 }
@@ -122,15 +123,17 @@ h2 {
 h3 {
     text-align: center;
     font-weight: bold;
-    
+
     font-size: 22pt;
 }
-h4{
+
+h4 {
     text-align: center;
     font-weight: bold;
     font-size: 18pt;
     text-decoration: underline;
 }
+
 img {
     display: block;
     margin-left: auto;
@@ -138,11 +141,13 @@ img {
     width: 50%;
     margin-bottom: 25px;
 }
-#toc{
+
+#toc {
     text-align: center;
 }
 
-#submit{ /*for quiz submit*/
+#submit {
+    /*for quiz submit*/
     /* display: block; */
     margin-top: 30px;
     margin-bottom: 50px;
@@ -151,63 +156,88 @@ img {
     color: black;
     font-weight: bolder;
 }
-#submit:hover{
+
+#submit:hover {
     background-color: yellow;
     color: black;
 }
-li{
+
+li {
     font-size: 20pt;
     margin-top: 50px;
 }
-input[type=radio] { /* for radio buttons on quizzes */
+
+input[type=radio] {
+    /* for radio buttons on quizzes */
     border: 0px;
     width: 5%;
     height: 1.75em;
     text-align: left;
 }
-.quizH2{ /* questions from quizzes */
+
+.quizH2 {
+    /* questions from quizzes */
     font-size: 20pt;
     margin-top: 50px;
     text-align: left;
 }
-.score{ /* score p tag on quizzes */
+
+.score {
+    /* score p tag on quizzes */
     font-size: 25pt;
     text-align: center;
 }
-.quizReset{
+
+.quizReset {
     /*quiz reset button*/
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 20pt;
 }
-.qrb{
+
+.qrb {
     /*quiz reset button div*/
     text-align: center;
 
 }
-ol{
+
+ol {
     margin-top: 50px;
 
     text-align: center;
 }
-li{
+
+li {
     line-height: 40px;
 }
-ul{
+
+ul {
     font-size: 10pt;
     text-align: center;
 }
+
 /* 0-2 styling */
-.subtext{ /* for supporting text in ol tags */
-    margin-left: 40px; 
-    margin-right: 40px; 
+.subtext {
+    /* for supporting text in ol tags */
+    margin-left: 40px;
+    margin-right: 40px;
     text-align: center;
 }
-.code{
+
+.code {
     background-color: rgb(87, 75, 75);
     color: white;
 }
-.code:hover{
+
+.code:hover {
     background-color: yellow;
     color: black;
+}
+
+.warning {
+    /* for yellow warning boxes*/
+    text-align: center;
+    background-color: yellow;
+    color: black;
+    font-family: monospace;
 }
