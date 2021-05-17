@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gitting Good 3-3: Git Commit - What is it/How to do it</title>
+    <title>Gitting Good 3-3: Git Commit & Git Push - What is it/How to do it</title>
     <!-- font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
     <!-- general styling -->
     <link rel="stylesheet" href="../../css/style.css">
 </head>
+
 <body>
     <div id="header">
         <a href="../../index.html">
@@ -22,56 +24,103 @@
     <!-- page content goes here -->
     <div class="main">
         <h2> Lesson 3-3 </h2>
-        <h3> Git Commit % Git Push - What is it/How to do it </h3>
-        <img src="../../img/3-3_gitcommit.png" style="width: 50%;max-width: 250px;"alt="git commit slingshot">
-        <p>Have you ever told someone that you will do something, and actually followed through with it? Maybe like saying you'll hang out soon and then the next weekend you go to the movies? Those are examples of commitments, and with your repository you will do the same.<BR><br>
-        Git Commit is a command used to stage changes to be pushed to the GitHub Cloud. When you commit something, you are getting it ready to be put up on GitHub and update all other locations with your new changes. <BR><BR>Commits are very critical to the communication and stages of a project. Here's how: </p>
+        <h3> Git Commit & Git Push - What is it/How to do it </h3>
+        <img src="../../img/3-3_gitcommit.png" style="width: 50%;max-width: 250px;" alt="git commit slingshot">
+        <p>Have you ever told someone that you will do something, and actually followed through with it? Maybe like
+            saying you'll hang out soon and then the next weekend you go to the movies? Those are examples of
+            commitments, and with your repository you will do the same.<BR><br>
+            Git Commit is a command used to stage changes to be pushed to the GitHub Cloud. When you commit something,
+            you are getting it ready to be put up on GitHub and update all other locations with your new changes.
+            <BR><BR>Commits are very critical to the communication and stages of a project. Here's how: </p>
         <ul>
             <li>Commits show the different stages of the developement of a project.</li>
             <li>Commit Messages tell us about what each stage added/removed from the project.</li>
-            <li>A commit can be made as soon as any minor change is made to a file (even adding a space triggers git to offer you the ability to make a commit).</li>
+            <li>A commit can be made as soon as any minor change is made to a file (even adding a space triggers git to
+                offer you the ability to make a commit).</li>
         </ul>
         <h4>Commit Messages</h4>
-        <p>Commit messages are text-based messages that you write outlining the changes that you made in a project at a certain commit. These messages are read by not only partners on a project but also senior mangement and/or professors. It is also important to make good commit messages because someone coming from an outsider's perspective will use your commit messages to get an idea of how you solved a problem, or did something.A general rule of thumb for commit messages is as follows:</p>
+        <p>Commit messages are text-based messages that you write outlining the changes that you made in a project at a
+            certain commit. These messages are read by not only partners on a project but also senior mangement and/or
+            professors. It is also important to make good commit messages because someone coming from an outsider's
+            perspective will use your commit messages to get an idea of how you solved a problem, or did something.A
+            general rule of thumb for commit messages is as follows:</p>
         <ol type="1">
-            <li>The message should be at least 20 characters in length, ideally more. This would equate to a few words. DO NOT MAKE EMPTY COMMITS! </li>
-            <li>The message should describe, in detail, what you did. For example, if you made a function that added two numbers that wasn't there before, you could say "created a function that adds 2 inputted numbers"</li>
+            <li>The message should be at least 20 characters in length, ideally more. This would equate to a few words.
+                DO NOT MAKE EMPTY COMMITS! </li>
+            <li>The message should describe, in detail, what you did. For example, if you made a function that added two
+                numbers that wasn't there before, you could say "created a function that adds 2 inputted numbers"</li>
             <li>Use proper grammar and spelling.</li>
-            <li>Does NOT include code snippets in the message itself. This is bad practice as no one will understand what the code is supposed to do.</li>
+            <li>Does NOT include code snippets in the message itself. This is bad practice as no one will understand
+                what the code is supposed to do.</li>
             <li>Overall readable by any person at any time. Does not require context.</li>
         </ol>
-        <p>Now there are some times when you are doing one line changes and then commiting them. For example you switched a + for a - or you added css styling to one part of a webpage. Depending on your organization, you can do simple 1 word commits, but I strongly recommend that you still 'commit' (sorry for the cheesy joke there) to writing messages based on the aforementioned rules.<BR><BR>
-        Since this site is on a open-source repository, I can show you my commit history for this site. <a href="https://github.com/gittinggood0/gg/commits/main" target="_blank">You can view the commit history here.</a> 
-        <img src="../../img/3-3_gitpush.png" style="width: 50%;max-width: 250px; margin-top: 50px;"alt="git commit slingshot">
-        <p>The final step to upload files to the GitHub Cloud is <span class="code">git push.</span> This command will send the updated version of files and folders to the GitHub Cloud from your local machine or server, depending on where you initate it. It will also make note of the commit message that you thoughtfully wrote and display it on GitHub.com in each iteration of a file. Git Push is like you send the rock from the slingshot towards a target (hopefully not another living thing).<BR><BR>Pushes are the reason that pulls are necessary. When someone does a push, a pull is needed to maintain consistency in the repository's files.  </p>
+        <p>Now there are some times when you are doing one line changes and then commiting them. For example you
+            switched a + for a - or you added css styling to one part of a webpage. Depending on your organization, you
+            can do simple 1 word commits, but I strongly recommend that you still 'commit' (sorry for the cheesy joke
+            there) to writing messages based on the aforementioned rules.<BR><BR>
+            Since this site is on a open-source repository, I can show you my commit history for this site. <a
+                href="https://github.com/gittinggood0/gg/commits/main" target="_blank">You can view the commit history
+                here.</a>
+            <img src="../../img/3-3_gitpush.png" style="width: 50%;max-width: 250px; margin-top: 50px;"
+                alt="git commit slingshot">
+        <p>The final step to upload files to the GitHub Cloud is <span class="code">git push.</span> This command will
+            send the updated version of files and folders to the GitHub Cloud from your local machine or server,
+            depending on where you initate it. It will also make note of the commit message that you thoughtfully wrote
+            and display it on GitHub.com in each iteration of a file. Git Push is like you send the rock from the
+            slingshot towards a target (hopefully not another living thing).<BR><BR>Pushes are the reason that pulls are
+            necessary. When someone does a push, a pull is needed to maintain consistency in the repository's files.
+        </p>
 
 
         <p> Now then, let's see how we can commit and push files.</p>
         <H4>GitHub Desktop</H4>
         <ol type="1">
             <li>Open GitHub Desktop and select your current repository.</li>
-            <li>If you have changes to commit, you should see something like Figure 3F. If not, wait until you make changes, and then check back.</li>
+            <li>If you have changes to commit, you should see something like Figure 3F. If not, wait until you make
+                changes, and then check back.</li>
             <img class="img" src="../../img/3-3_preMessage.png" alt="commit window before typing message">
-            <small>Figure 3F: The pane to the right shows the additions you made in green. It shows deletions in red.</small>
-            <li>To Commit, type in a brief message in the top box, and a longer description in the bottom box. Click the "Commit to main" button at the bottom. (see Figure 3G)</li>
+            <small>Figure 3F: The pane to the right shows the additions you made in green. It shows deletions in
+                red.</small>
+            <li>To Commit, type in a brief message in the top box, and a longer description in the bottom box. Click the
+                "Commit to main" button at the bottom. (see Figure 3G)</li>
             <img class="img" src="../../img/3-3_postMessage.png" alt="commit window after typing message">
             <small>Figure 3G: Writing commit title and message.</small>
             <li>Finally, to push, just click the "push origin" button at either location. (see Figure 3H)</li>
             <img class="img" src="../../img/3-3_prePush.png" alt="commit window before typing message">
             <small>Figure 3H: About to push the changes to the GitHub Cloud.</small>
-            <li>One done, it should go back to normal, like in figure 3A from the previous page.</li>
+            <li>One done, it should go back to normal, <a href="3-2.html" target="_blank">like in figure 3A from the
+                    previous page.</a></li>
         </ol>
         <H4>Terminal</H4>
+        <ol type="1">
+            <li>Open terminal and navigate to your repository via the <span class="code">cd</span> command.</li>
+            <li>Use <span class="code">git status</span> to see if there are changes to commit. If there are, it will look like figure 3I.</li>
+            <img src="../../img/3-3_prePushGitStatus.png" alt="git add in terminal">
+            <small>Figure 3I: This is the message that should pop up if there are changes to be made. It will look different depending on what changes you made.</small>
+            <li>To make a new commit, type in <span class="code">git add --all</span> which will add all files to the commit stage. Hit enter when done. Note: it won't say anything back once you do this, and that is normal. (see Figure 3J)</li>
+            <img src="../../img/3-3_gitadd.png" alt="git commit in terminal">
+            <small>Figure 3J: After doing <span class="code">git add --all</span> you should see nothing happen, just a new line for a new command to be entered. </small>
+            <li>Now, to add a message to our commit, type in <span class="code">git commit -m "yourMessageHere"</span> and click enter. (See Figure 3K).</li>
+            <img src="../../img/3-3_gitCommit-m.png" alt="git commit with message in terminal">
+            <small>Figure 3K: Git will output some jibber jabber about the changes you made, similar to a pull.</small>
+            <li>Finally, to push, type in <span class="code">git push</span> and click enter. (see Figure 3L)</li>
+            <img src="../../img/3-3_gitPushTerminal.png" alt="git add in terminal">
+            <small>Figure 3L: After pushing, more jibber jabber comes out but the deed is done if no errors are thrown.</small>
+        </ol>
+        <p>I know that was a lot of information for lesson. On the bright side, that is all there is to pulling, commiting and pushing. Let's take a breather and come back and review later.</p>
     </div>
     <div id="navbuttons">
         <a href="3-2.html"><button id="previous">Previous Page</button></a>
         <a href="3-R.html"><button id="next">Next Page</button></a>
     </div>
     <div id="footer">
-        <a href="https://docs.google.com/document/d/11JvraVtRNpFEnLHPJOL6NX4Ilss-Lloz9R_Cd6X8nm0/edit?usp=sharing">See the google doc I made already here.</a>
+        <a href="https://docs.google.com/document/d/11JvraVtRNpFEnLHPJOL6NX4Ilss-Lloz9R_Cd6X8nm0/edit?usp=sharing">See
+            the google doc I made already here.</a>
         <p> Faiq Ashraf made this website as a way to teach GitHub in an easy to digest way.</p>
-        <p><a href="mailto:gittinggood0@gmail.com"> If you found an error in this website, or just have topic suggestions, email Faiq here.</a></p>
+        <p><a href="mailto:gittinggood0@gmail.com"> If you found an error in this website, or just have topic
+                suggestions, email Faiq here.</a></p>
         <small>All mentions to GitHub and its products are copyrights of GitHub Inc.</small>
     </div>
 </body>
+
 </html>
