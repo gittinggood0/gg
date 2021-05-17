@@ -5,16 +5,16 @@
 // Questions
 let questions = [
   {
-    question: "How many people need to install the repository on their local machine(s)?",
+    question: "Which of the following is NOT one of the big three commands?",
     answers: {
-      a: "As many people as they want.",
-      b: "Only one person has to setup the repository.",
-      c: "Everyone who is a collaborator on the repository must clone it.",
+      a: "Git Add --All",
+      b: "Git Commit",
+      c: "Git Pull",
     },
-    correct: "c",
+    correct: "a",
   },
   {
-    question: "T/F You can setup a repository on GitHub Desktop and terminal",
+    question: "T/F Git Pull is basically like cloning - it retrieves the latest version of a repository from GitHub.com",
     answers: {
       a: "True",
       b: "False",
@@ -23,52 +23,68 @@ let questions = [
     correct: "a",
   },
   {
-    question: "Which of the following is NOT a part of setting up a repository?",
+    question: "Fill in the blanks: I am ready to get changes ready to send to GitHub, I should do a git ____ and when I am ready to send the changes I should do a git ____. ",
     answers: {
-      a: "Repository Name",
-      b: "Description",
-      c: "testing.txt file",
-      d: "Privacy",
-    },
-    correct: "c",
-  },
-  /*{
-    question: "Joe works for a multi-billion dollar coding firm. They just got a new client, and the team of 4 programmers asks Joe to make a new repository. Which privacy setting should Joe use, and why?",
-    answers: {
-      a: "Public, so that the client can view the steps of the development process as Joe's company does the work.",
-      b: "Public, so that people who google similar issues can find Joe's repository and get answers from there.",
-      c: "Private, so that only Joe and authorized collaborators can view the work in the repository.",
-      d: "Private, so that only Joe can view the work he has done.",
-    },
-    correct: "c",
-  },*/
-  {
-    question: "Eric is a student at Indiana University in Bloomington, IN (GO HOOSIERS!). He is taking a intro level coding course which asks him to store his code on GitHub. Which privacy setting should Joe use, and why?",
-    answers: {
-      a: "Public, so that he can share his work with other students in his class.",
-      b: "Public, so that people who google similar issues can find Eric's repository and get answers from there.",
-      c: "Private, so that only Joe and authorized collaborators (like TAs and instructors) can view the work in the repository.",
-      d: "Private, so that only Joe can view the work he has done. No need to share code with others",
+      a: "pull/push",
+      b: "push/pull",
+      c: "commit/push",
+      d: "push/commit",
     },
     correct: "c",
   },
   {
-    question: "What is the main difference between a ReadMe and a description?",
+    question: "T/F I should only do git pulls when absolutely necessary. Git Pulls are to be used sparingly.",
     answers: {
-      a: "READMEs are only viewable on GitHub.com, descriptions are in a MD file in the repository.",
-      b: "Descriptions are only viewable on GitHub.com, READMEs are in a MD file in the repository.",
-      c: "READMEs are helpful for someone to get a better idea of what a project is about, descriptions are filler fields.",
-      d: "Descriptions are helpful for someone to get a better idea of what a project is about, READMEs are filler fields.",
+      a: "True",
+      b: "False",
     },
     correct: "b",
   },
   {
-    question: "T/F A readme in a PRIVATE repository is useless to have.",
+    question: "Fill in the blanks: I can check if I need to do a git pull when I do ____ on GitHub Desktop or do ____ on terminal.",
     answers: {
-      a: "True, beacause only you will see the readme.",
-      b: "False, it is helpful to have in case someone else wants to see what the repo is about.",
+      a: "git status/git status",
+      b: "fetch origin/git pull",
+      c: "git pull/fetch origin",
+      d: "fetch origin/git status",
+    },
+    correct: "d",
+  },
+  {
+    question: "T/F Git Status tells me what changed I have made on only my local machine. It does not make me aware of changes on github.com",
+    answers: {
+      a: "True",
+      b: "False",
     },
     correct: "b",
+  },
+  {
+    question: "Which of the following IS a base rule of thumb for a commit message?",
+    answers: {
+      a: "At least 20 characters in length.",
+      b: "Be brief in detail.",
+      c: "No need for attention to grammar and spelling.",
+      d: "Require Context to be provided from the person who made the commit.",
+    },
+    correct: "a",
+  },
+  {
+    question: "Fill in the blanks: In GitHub Desktop, when viewing a potential commit, changes to lines are colored ____ while deleted lines are colored ____.",
+    answers: {
+      a: "black/green",
+      b: "red/white",
+      c: "green/red",
+      d: "green/white",
+    },
+    correct: "c",
+  },
+  {
+    question: "T/F I should fill in both the title and description field where possible in GitHub Desktop.",
+    answers: {
+      a: "True",
+      b: "False",
+    },
+    correct: "a",
   },
 ];
 function createQuiz() {
