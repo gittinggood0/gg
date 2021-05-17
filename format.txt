@@ -2,6 +2,11 @@ this is a reference as to how I chose to format diffrent things on this reposito
 
 ALL IMG SRC ARE ="../../img/<IMAGENAME>"
 
+
+<img id="img2" src="../../img/2-2_codeButton.png" alt="new Repository" style="width:100%;max-width:500px;margin-top: 50px;">
+<small style="margin-bottom: 50px;">Figure 2E: The button to click is circled for your convenience.</small>
+
+
 template.html is a template (duh) for lesson pages
 ?-Q.html is a template (again, duh) for quiz pages
 

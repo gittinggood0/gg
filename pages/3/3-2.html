@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,11 @@
     <title>Gitting Good 3-2: Git Pull - What is it/How to do it</title>
     <!-- font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
     <!-- general styling -->
     <link rel="stylesheet" href="../../css/style.css">
 </head>
+
 <body>
     <div id="header">
         <a href="../../index.html">
@@ -24,20 +26,79 @@
         <h2> Lesson 3-2 </h2>
         <h3> Git Pull - What is it/How to do it</h3>
         <img src="../../img/3-2_gitpull.png" alt="slingshot with git pull written below">
-        <p>So our first step is <span class="code">git pull</span>. Pulling is basically what you did when you cloned the repository. This step is the least common one you will do of the big 3, however, it is important in preventing merge conflicts, which I will explain in a later chapter.<br><BR>
-        The process of doing a <span class="code">git pull</span> is when either your local machine or the server your working on needs to get the most up-to-date versions of all of the files in the repository. As illustrated in the graphic above, the idea is that you are loading up your slingshot, or in our case, our local/server side folder with the new versions of a file.
-    <BR><BR>
-    I personally suggest that you frequently do a <span class="code">git pull</span> so that you don't have outdated files. At a minimum, do one <strong> BEFORE</strong> you start working! Again, I'll explain my reasoning more later. Let me show you how to do a <span class="code">git pull</span> on both GitHub Desktop and Terminal.</p>
+        <p>So our first step is <span class="code">git pull</span>. Pulling is basically what you did when you cloned
+            the repository. This step is the least common one you will do of the big 3, however, it is important in
+            preventing merge conflicts, which I will explain in a later chapter.<br><BR>
+            The process of doing a <span class="code">git pull</span> is when either your local machine or the server
+            your working on needs to get the most up-to-date versions of all of the files in the repository. As
+            illustrated in the graphic above, the idea is that you are loading up your slingshot, or in our case, our
+            local/server side folder with the new versions of a file.
+            <BR><BR>
+            I personally suggest that you frequently do a <span class="code">git pull</span> so that you don't have
+            outdated files. At a minimum, do one <strong> BEFORE</strong> you start working! Again, I'll explain my
+            reasoning more later. Let me show you how to do a <span class="code">git pull</span> on both GitHub Desktop
+            and Terminal.
+        </p>
+        <h4>GitHub Desktop</h4>
+        <ol type="1">
+            <li>Open up GitHub Desktop.</li>
+            <li>Click the "fetch origin" button at the top right corner. (see Figure 3A)</li>
+
+            <img id="img2" src="../../img/3-2_git_pull.png" alt="Git Pull menu"
+                style="width:100%;max-width:500px;margin-top: 50px;">
+            <small style="margin-bottom: 50px;">Figure 3A: This is what the window should look like after a Git Pull,
+                and sometimes, you need to manually check for a newer version of the repository, and that will also make
+                the window appear this way.</small>
+            <li>If there a newer version on Github.com, it will show something similar to Figure 3B. If it doesn't show
+                anything different than Figure 3A, then you're good to go!</li>
+            <li>Click "Git Pull" in either part of the window. (see Figure 3B)</li>
+            <img id="img2" src="../../img/3-2_clickbutton.png" alt="new Repository"
+                style="width:100%;max-width:500px;margin-top: 50px;">
+            <small style="margin-bottom: 50px;">Figure 3B: The button to click is circled for your convenience. You can
+                click either one labeled "git pull".</small>
+            <li>Once it is done pulling, it will look like Figure 3A.</li>
+        </ol>
+        <h4>Terminal</h4>
+        <ol type="1">
+            <li>Open terminal and navigate to your repository via the <span class="code">cd</span> command.</li>
+            <li>You can check the status of the repo by typing <span class="code">git status</span>. If it looks like
+                figure 3C, you need to do a pull. If it looks like Figure 3D, you are good to go!</li>
+            <img id="img2" src="../../img/3-2_needPull.png" alt="need a pull"
+                style="width:100%;max-width:500px;margin-top: 50px;">
+            <small style="margin-bottom: 50px;">Figure 3C: You'll see something like this if there's a newer version of
+                the repository available.</small>
+            <img id="img2" src="../../img/3-2_gitStatusGood.png" alt="don't need a pull"
+                style="width:100%;max-width:500px;margin-top: 50px;">
+            <small style="margin-bottom: 50px;">Figure 3D: You should see this if there isn't a newer version
+                available.</small>
+            <li>To do the actual pull, type in <span class="code">git pull</span> and click enter. (see Figure 3E)</li>
+            <img id="img2" src="../../img/3-2_gitPulling.png" alt="don't need a pull"
+                style="width:100%;max-width:500px;margin-top: 50px;">
+            <small style="margin-bottom: 50px;">Figure 3E: Just simply type <span class="code">git pull</span> to do the
+                deed of pulling from github.com.</small>
+            <li>Once you did that, it should look like Figure 3F. It will tell you what files it added/removed and how
+                many lines were modified.</li>
+            <img id="img2" src="../../img/3-2_pulled.png" alt="don't need a pull"
+                style="width:100%;max-width:500px;margin-top: 50px;">
+            <small style="margin-bottom: 50px;">Figure 3F: It will show some different pieces of metadata and other
+                jibber jabber that even I don't know the meaning of, but it is working properly.</small>
+            <li>To be sure everything worked, you can type <span class="code">git status</span> again. It should like
+                figure 3D.</li>
+        </ol>
+        <p>That is all that there is to pulling. You'll notice that these commands all start with <span class="code">git</span> because they run in the Git language. In the next section, we will explorer how to do commits, and why they are important.</p>
     </div>
     <div id="navbuttons">
         <a href="3-1.html"><button id="previous">Previous Page</button></a>
         <a href="3-3.html"><button id="next">Next Page</button></a>
     </div>
     <div id="footer">
-        <a href="https://docs.google.com/document/d/11JvraVtRNpFEnLHPJOL6NX4Ilss-Lloz9R_Cd6X8nm0/edit?usp=sharing">See the google doc I made already here.</a>
+        <a href="https://docs.google.com/document/d/11JvraVtRNpFEnLHPJOL6NX4Ilss-Lloz9R_Cd6X8nm0/edit?usp=sharing">See
+            the google doc I made already here.</a>
         <p> Faiq Ashraf made this website as a way to teach GitHub in an easy to digest way.</p>
-        <p><a href="mailto:gittinggood0@gmail.com"> If you found an error in this website, or just have topic suggestions, email Faiq here.</a></p>
+        <p><a href="mailto:gittinggood0@gmail.com"> If you found an error in this website, or just have topic
+                suggestions, email Faiq here.</a></p>
         <small>All mentions to GitHub and its products are copyrights of GitHub Inc.</small>
     </div>
 </body>
+
 </html>
