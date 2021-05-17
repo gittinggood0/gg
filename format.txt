@@ -26,3 +26,6 @@ Previous page from a previous chapter format:
 Next page from a Next chapter format: [on quiz pages]
 <a href="1-R.html"><button id="previous">Previous Page</button></a>
 <a href="../2/2-1.html"><button id="next">Next Page</button></a>
+
+open in new tab
+target="_blank"
