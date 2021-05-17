@@ -161,10 +161,12 @@ input[type=radio] { /* for radio buttons on quizzes */
     border: 0px;
     width: 5%;
     height: 1.75em;
+    text-align: left;
 }
 .quizH2{ /* questions from quizzes */
     font-size: 20pt;
     margin-top: 50px;
+    text-align: left;
 }
 .score{ /* score p tag on quizzes */
     font-size: 25pt;
