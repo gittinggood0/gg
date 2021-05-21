@@ -243,9 +243,3 @@ ul {
     font-family: monospace;
     font-size: 18pt;
 }
-/* p:hover{
-    color: rgb(37, 175, 221);
-} */
-p:focus{
-    color: rgb(37, 175, 221);
-}
