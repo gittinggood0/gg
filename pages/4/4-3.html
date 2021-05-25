@@ -62,7 +62,7 @@
             <li>Open the branch you want to merge into in repository. (In most cases, you want to merge a separate branch into your main branch.)</li>
             <li>On the top ribbon under "Current Branch", click the button in that area.</li>
             <li>You should see all of your branches, including the main one. Click "Choose a branch to merge into main".(see Figure 4F)</li>
-            <img id="img2" src="../../img/4-3_chooseBranchToMerge.png" alt="selecting branch to merge in github desktop" style="width:100%;max: width 5px;750px;margin-top: 50px;">
+            <img id="img2" src="../../img/4-3_chooseBranchToMerge.png" alt="selecting branch to merge in github desktop" style="width:100%;max-width 750px;margin-top: 50px;">
             <small style="margin-bottom: 50px;">Figure 4F: You will be presented with all of the branches in the repository.</small>
             <li>On the Pop up window, select the branch you want to merge and click "Merge \branchName\ into main".(see Figure 4G)</li>
             <img id="img2" src="../../img/4-3_selectingBranchAndMerging.png" alt="merging 2 branches in github desktop" style="width:100%;max-width:500px;margin-top: 50px;">
@@ -71,6 +71,30 @@
         </ol>
         <p>That is all that there is to doing branching on GitHub Desktop. Now let's explorer how to do it in Terminal.</p>
         <p>So there you have it. Branching isn't all that bad. Hopefully you better understand the way Branching works. I sure do. Let's recap what we learned on the next page.</p>
+        <h4>Terminal</h4>
+        <H5>Creating a Branch</h5>
+        <ol type="1">
+            <li>Navigate to the directory with your repository via the <span class="code">cd</span> command.</li>
+            <li>To create a new branch, type in <span class="code">git branch \branchName\</span> and hit enter.(see Figure 4H)</li>
+            <img id="img2" src="../../img/4-3_CLI_newBranch.png" alt="creating branch in terminal" style="width:100%;max-width:500px;margin-top: 50px;">
+            <small style="margin-bottom: 50px;">Figure 4H: This is what you will see after you click enter. Nothing will pop up, but that is normal.</small>
+            <li>Just like in terminal, you can make a directory (<span class="code">mkdir</span>) but it doesn't put you inside of it. In order to make changes in the newly created branch (or even to switch between branches) type <span class="code">git checkout \branchName\</span> and then click enter.(see Figure 4I)</li>
+            <img id="img2" src="../../img/4-3_CLI_checkout.png" alt="switching to newly created branch in terminal" style="width:100%;max-width:500px;margin-top: 50px;">
+            <small style="margin-bottom: 50px;">Figure 4I: Simple command to switch to new terminal. Read the output to make sure you're in the right branch!</small>
+            <p>Now go ahead and add some code to this branch. Once that is done, you can go ahead and push it to GitHub.</p>
+            <li>Once you are done with adding at least 1 file, type in <span class="code">git push -u origin \branchName\</span> and click enter.(see Figure 4J)</li>
+            <img id="img2" src="../../img/4-3_CLI_push.png" alt="pushing newly created branch in terminal" style="width:100%;max-width:500px;margin-top: 50px;">
+            <small style="margin-bottom: 50px;">Figure 4J: Pushing the branch is similar to doing so normally.</small>
+            <li>The previous step only pushed the new branch. Go ahead and commit/push new changes as outlined in section <a href="../3/3-3.html">3-3</a>.</li>
+        </ol>
+        <p><BR><BR>Similar to before, you might need to switch between branches. You can do so by typing <span class="code">git checkout \branchName\</span><BR><BR>
+        If you want to see what branch you are in currently, type in <span class="code">git branch</span>.<BR><BR>Again, notice how main does not have our hello.js, but Stage01 does: </p>
+            <img id="img2" src="../../img/4-3_CLI_main.png" alt="pushing newly created branch in terminal" style="width:100%;max-width:1000px;margin-top: 50px;">
+            <small style="margin-bottom: 50px;">Figure 4K: hello.js is nowhere to be found in main.</small>
+            <img id="img2" src="../../img/4-3_CLI_Stage01.png" alt="pushing newly created branch in terminal" style="width:100%;max-width:1000px;margin-top: 50px;">
+            <small style="margin-bottom: 50px;">Figure 4L: hello.js is alive and well in our branch named 'Stage01'.</small>
+        <h5>Merging 2 Branches</h5>
+
     </div>
     <div id="navbuttons">
         <a href="4-2.html"><button id="previous">Previous Page</button></a>
