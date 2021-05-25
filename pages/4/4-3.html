@@ -33,7 +33,7 @@
         </ol>
         <p>For these instructions, I will show you how to do all 3 steps in each sub-section.</p>
         <h4>GitHub Desktop</h4>
-        <H5>Creating a Branch</h5>
+        <H5>Creating a Branch</H5>
         <ol type="1">
             <li>Open GitHub Desktop and open the repository that you want to branch in.</li>
             <li>On the top ribbon under "Current Branch", click the button in that area.</li>
@@ -48,7 +48,7 @@
             <small style="margin-bottom: 50px;">Figure 4C: This is what you shall see once you have created a branch.</small>
         </ol>
         <p>To switch between branches, follow step 2, but instead, select the branch you want to work out of.<BR><BR>This process is called <span class="code">git checkout</span> and works similar to checking out a book from a library. You are taking all of the files from a specified branch and working inside of them at a different location in your repository, like how you take a book home from the library to read and then eventually return.<BR><BR><i>Note that it will say for you to do a pull request after the last step, but that is optional. It allows you to compare two branches (the one you created and an already existing one).You can, as will I, ignore this.</i><BR><BR>Now go ahead and do any coding you want. In my case, I added a file called hello.py that prints "helloWorld" in the console.</p>
-        <h5>Committing/Pushing with a Branch</h5>
+        <H5>Committing/Pushing with a Branch</H5>
         <p>There really isn't much to say here. Just like you would commit/push on the main branch from <a href="../3/3-3.html">3-3</a>, you would follow the same steps but instead you are committing to your new branch.<BR><BR>After committing/pushing this is how the main branch looks:</p>
         <img id="img2" src="../../img/4-3_main.png" alt="main branch on github.com" style="width:100%;max-width:1000px;margin-top: 50px;">
         <small style="margin-bottom: 50px;">Figure 4D: Notice that "hello.py" isn't to be found here.</small>
@@ -57,12 +57,12 @@
         <small style="margin-bottom: 50px;">Figure 4E: Notice that "hello.py" is here. That is the magic of branching (not Macy's).</small>
         <p>Now that we have added some code, let's merge our branch back into main. You would normally do this once you are ready to merge new changes from the front-facing part of your app with the new backend code.</p>
    
-        <h5>Merging 2 Branches</h5>
+        <H5>Merging 2 Branches</H5>
         <ol type="1">
             <li>Open the branch you want to merge into in repository. (In most cases, you want to merge a separate branch into your main branch.)</li>
             <li>On the top ribbon under "Current Branch", click the button in that area.</li>
             <li>You should see all of your branches, including the main one. Click "Choose a branch to merge into main".(see Figure 4F)</li>
-            <img id="img2" src="../../img/4-3_chooseBranchToMerge.png" alt="selecting branch to merge in github desktop" style="width:100%;max-width 500px;margin-top: 50px;">
+            <img id="img2" src="../../img/4-3_chooseBranchToMerge.png" alt="selecting branch to merge in github desktop" style="width:100%;max-width:500px;margin-top: 50px;">
             <small style="margin-bottom: 50px;">Figure 4F: You will be presented with all of the branches in the repository.</small>
             <li>On the Pop up window, select the branch you want to merge and click "Merge \branchName\ into main".(see Figure 4G)</li>
             <img id="img2" src="../../img/4-3_selectingBranchAndMerging.png" alt="merging 2 branches in github desktop" style="width:100%;max-width:500px;margin-top: 50px;">
@@ -71,7 +71,7 @@
         </ol>
         <p>That is all that there is to doing branching on GitHub Desktop. Now let's explorer how to do it in Terminal.</p>
         <h4>Terminal</h4>
-        <H5>Creating a Branch</h5>
+        <H5>Creating a Branch</H5>
         <ol type="1">
             <li>Navigate to the directory with your repository via the <span class="code">cd</span> command.</li>
             <li>To create a new branch, type in <span class="code">git branch \branchName\</span> and hit enter.(see Figure 4H)</li>
@@ -93,7 +93,7 @@
             <img id="img2" src="../../img/4-3_CLI_Stage01.png" alt="pushing newly created branch in terminal" style="width:100%;max-width:1000px;margin-top: 50px;">
             <small style="margin-bottom: 50px;">Figure 4L: hello.js is alive and well in our branch named 'Stage01'.</small>
         <p>We are now ready to merge back into main. Here is how we do just that.</p>
-        <h5>Merging 2 Branches</h5>
+        <H5>Merging 2 Branches</H5>
         <ol type="1">
             <li>Move to the branch you want to merge into by typing <span class="code">git checkout \branchName\</span> and clicking enter.(see Figure 4M)</li>
             <img id="img2" src="../../img/4-3_CLI_checkout_to_merge.png" alt="checking out of new branch into main" style="width:100%;max-width:500px;margin-top: 50px;">
