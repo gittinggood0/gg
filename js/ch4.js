@@ -1,20 +1,20 @@
-/* Chapter 3 Quiz */
+/* Chapter 4 Quiz */
 
 "use strict";
 
 // Questions
 let questions = [
   {
-    question: "Which of the following is NOT one of the big three commands?",
+    question: "Why do we do branching?",
     answers: {
-      a: "Git Add --All",
-      b: "Git Commit",
-      c: "Git Pull",
+      a: "It is a great way to organize our code.",
+      b: "It is a great way to help further display version history.",
+      c: "Both A & B",
     },
-    correct: "a",
+    correct: "c",
   },
   {
-    question: "T/F Git Pull is basically like cloning - it retrieves the latest version of a repository from GitHub.com",
+    question: "T/F We should branch early and often.",
     answers: {
       a: "True",
       b: "False",
@@ -23,35 +23,17 @@ let questions = [
     correct: "a",
   },
   {
-    question: "Fill in the blanks: I am ready to get changes ready to send to GitHub, I should do a git ____ and when I am ready to send the changes I should do a git ____. ",
+    question: "Fill in the blanks: I am working on a new feature right now, therefore, I should be coding in the ____ branch. In the ____ branch, I have a stable/working product.",
     answers: {
-      a: "pull/push",
-      b: "push/pull",
-      c: "commit/push",
-      d: "push/commit",
-    },
-    correct: "c",
-  },
-  {
-    question: "T/F I should only do git pulls when absolutely necessary. Git Pulls are to be used sparingly.",
-    answers: {
-      a: "True",
-      b: "False",
-    },
-    correct: "b",
-  },
-  {
-    question: "Fill in the blanks: I can check if I need to do a git pull when I do ____ on GitHub Desktop or do ____ on terminal.",
-    answers: {
-      a: "git status/git status",
-      b: "fetch origin/git pull",
-      c: "git pull/fetch origin",
-      d: "fetch origin/git status",
+      a: "main/developed",
+      b: "developed/main",
+      c: "main/inProgress",
+      d: "inProgress/main",
     },
     correct: "d",
   },
   {
-    question: "T/F Git Status tells me what changed I have made on only my local machine. It does not make me aware of changes on github.com",
+    question: "T/F Branching does NOT help in reverting files in case a newer version breaks a system.",
     answers: {
       a: "True",
       b: "False",
@@ -59,32 +41,62 @@ let questions = [
     correct: "b",
   },
   {
-    question: "Which of the following IS a base rule of thumb for a commit message?",
+    question: "Which of the following IS NOT one the 3 parts of branching?.",
     answers: {
-      a: "At least 20 characters in length.",
-      b: "Be brief in detail.",
-      c: "No need for attention to grammar and spelling.",
-      d: "Require Context to be provided from the person who made the commit.",
+      a: "Creating a Branch",
+      b: "Pulling a Branch",
+      c: "Adding Code to a Branch",
+      d: "Commit/Pushing to a Branch",
     },
-    correct: "a",
+    correct: "b",
   },
   {
-    question: "Fill in the blanks: In GitHub Desktop, when viewing a potential commit, changes to lines are colored ____ while deleted lines are colored ____.",
+    question: "Fill in the blanks: _____ is used to switch between branches whereas _____ is used to commit/push them to GitHub.com",
     answers: {
-      a: "black/green",
-      b: "red/white",
-      c: "green/red",
-      d: "green/white",
+      a: "git checkout/git match",
+      b: "git match/git checkout",
+      c: "git push/git checkout",
+      d: "git checkout/git push",
     },
-    correct: "c",
+    correct: "d",
   },
   {
-    question: "T/F I should fill in both the title and description field where possible in GitHub Desktop.",
+    question: "T/F When you add a file to a branch and push it, it will show up on all branches of the repository.",
     answers: {
       a: "True",
       b: "False",
     },
+    correct: "b",
+  },
+  {
+    question: "A repository has 3 branches: main, inProgress, and beta. I am ready to merge INTO main from beta. Where should I checkout into?",
+    answers: {
+      a: "main",
+      b: "inProgress",
+      c: "beta",
+      d: "There's no need to checkout from any branch.",
+    },
     correct: "a",
+  },
+  {
+    question: "Fill in the blanks: I want to commit changes in my new branch, so I will use the command _____. When I first created the branch, I used the command _____ to upload it to github.com",
+    answers: {
+      a: "git push -u origin/git push",
+      b: "git push/git push -u origin",
+      c: "git push -u origin/git create branch",
+      d: "git create branch/git push -u origin",
+    },
+    correct: "b",
+  },
+  {
+    question: "Jesse is working on a project. He used the beta branch to share his project with beta users. Now that the beta trial is over, the branch is no longer used. Should Jesse delete the branch?",
+    answers: {
+      a: "Yes, because GitHub limits storage so it would free up much needed space.",
+      b: "Yes, because having less branches will create for less confusion.",
+      c: "No, because branches contain valuable version history.",
+      d: "No, because each branch will contain a working version of that iteration of the project, which can be useful if Jesse needed to revert a version or more in the future.",
+    },
+    correct: "d",
   },
 ];
 function createQuiz() {
