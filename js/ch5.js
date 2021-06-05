@@ -5,98 +5,58 @@
 // Questions
 let questions = [
   {
-    question: "Why do we do branching?",
+    question: "T/F A merge conflict is something that is not preventable. You just have to deal with it as it happens from time-to-time.",
     answers: {
-      a: "It is a great way to organize our code.",
-      b: "It is a great way to help further display version history.",
-      c: "Both A & B",
+      a: "True",
+      b: "False",
+    },
+    correct: "b",
+  },
+  {
+    question: "T/F Merge Conflicts can only occur between 2 locations. For example you cannot have a merge conflict between your local machine, github.com, and your server.",
+    answers: {
+      a: "True",
+      b: "False",
+    },
+    correct: "b",
+  },
+  {
+    question: "Which of the following IS NOT a way to prevent merge conflicts?",
+    answers: {
+      a: "Git Pull before and after working",
+      b: "Working on a file at a different time",
+      c: "Pushing Frequently",
+      d: "All of the above are great ways to prevent merge conflicts",
+    },
+    correct: "d",
+  },
+  {
+    question: "When a merge conflict is made, it is because Git sees ____ different versions of a file.",
+    answers: {
+      a: "2",
+      b: "3",
+      c: "multiple",
     },
     correct: "c",
   },
   {
-    question: "T/F We should branch early and often.",
+    question: "Which of the following IS NOT a step of resolving a merge conflict?",
     answers: {
-      a: "True",
-      b: "False",
-      // c: "goo goo gaga",
+      a: "Delete any lines that will not compile",
+      b: "Deleting the commit IDs attached with each line",
+      c: "Delete the file in its entirety and create a new one using the same name",
+      d: "All of the above are steps needed to be done in order to resolve a merge conflict.",
     },
-    correct: "a",
+    correct: "c",
   },
   {
-    question: "Fill in the blanks: I am working on a new feature right now, therefore, I should be coding in the ____ branch. In the ____ branch, I have a stable/working product.",
+    question: "In terminal, when you are done editing a file, what is the sequence of key strokes that you need to do in order to save changes.",
     answers: {
-      a: "main/developed",
-      b: "developed/main",
-      c: "main/inProgress",
-      d: "inProgress/main",
-    },
-    correct: "d",
-  },
-  {
-    question: "T/F Branching does NOT help in reverting files in case a newer version breaks a system.",
-    answers: {
-      a: "True",
-      b: "False",
+      a: "Y,Return/Enter,CTRL+X",
+      b: "CTRL+X,Y,Return/Enter",
+      c: "CTRL+X,Return/Enter,Y",
     },
     correct: "b",
-  },
-  {
-    question: "Which of the following IS NOT one the 3 parts of branching?.",
-    answers: {
-      a: "Creating a Branch",
-      b: "Pulling a Branch",
-      c: "Adding Code to a Branch",
-      d: "Commit/Pushing to a Branch",
-    },
-    correct: "b",
-  },
-  {
-    question: "Fill in the blanks: _____ is used to switch between branches whereas _____ is used to commit/push them to GitHub.com",
-    answers: {
-      a: "git checkout/git match",
-      b: "git match/git checkout",
-      c: "git push/git checkout",
-      d: "git checkout/git push",
-    },
-    correct: "d",
-  },
-  {
-    question: "T/F When you add a file to a branch and push it, it will show up on all branches of the repository.",
-    answers: {
-      a: "True",
-      b: "False",
-    },
-    correct: "b",
-  },
-  {
-    question: "A repository has 3 branches: main, inProgress, and beta. I am ready to merge INTO main from beta. Where should I checkout into?",
-    answers: {
-      a: "main",
-      b: "inProgress",
-      c: "beta",
-      d: "There's no need to checkout from any branch.",
-    },
-    correct: "a",
-  },
-  {
-    question: "Fill in the blanks: I want to commit changes in my new branch, so I will use the command _____. When I first created the branch, I used the command _____ to upload it to github.com",
-    answers: {
-      a: "git push -u origin/git push",
-      b: "git push/git push -u origin",
-      c: "git push -u origin/git create branch",
-      d: "git create branch/git push -u origin",
-    },
-    correct: "b",
-  },
-  {
-    question: "Jesse is working on a project. He used the beta branch to share his project with beta users. Now that the beta trial is over, the branch is no longer used. Should Jesse delete the branch?",
-    answers: {
-      a: "Yes, because GitHub limits storage so it would free up much needed space.",
-      b: "Yes, because having less branches will create for less confusion.",
-      c: "No, because branches contain valuable version history.",
-      d: "No, because each branch will contain a working version of that iteration of the project, which can be useful if Jesse needed to revert a version or more in the future.",
-    },
-    correct: "d",
   },
 ];
 function createQuiz() {
