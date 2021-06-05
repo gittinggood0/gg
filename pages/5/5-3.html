@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gitting Good X-X: TITLE</title>
+    <title>Gitting Good 5-3: How to fix a Merge Conflict</title>
     <!-- font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
     <!-- general styling -->
     <link rel="stylesheet" href="../../css/style.css">
 </head>
+
 <body>
     <div id="header">
         <a href="../../index.html">
@@ -21,18 +23,50 @@
     </div>
     <!-- page content goes here -->
     <div class="main">
-        <h2> Lesson 0-1 </h2>
-        <h3> TITLE </h3>
+        <h2> Lesson 5-3 </h2>
+        <h3> How to fix a Merge Conflict </h3>
+        <p>I can't cover all types of merge conflicts, or else we would be here all day. So I will show to most basic
+            type, an issue with a file. To do this, I have modified the file named "hello.py" locally by adding a print
+            statement. On GitHub.com, I added a input statement on the same line. This is the resulting error that I
+            get: </p>
+        <img id="img2" src="../../img/5-3_mergeConflict_gd.png" alt="new Repository"
+            style="width:100%;max-width:500px;margin-top: 50px;">
+        <small style="margin-bottom: 50px;">Figure 5A: GitHub Desktop already knows what is going on.</small>
+        <p>On GitHub Desktop, you'll notice that it opens a new window, like figure 5B. It will show you what file(s) are causing the problem, and it will ask you to open it in your IDE (mine is Visual Studio Code, 10/10 def recommend).</p>
+        <img id="img2" src="../../img/5-3_mc_popup.png" alt="new Repository"
+            style="width:100%;max-width:750px;margin-top: 50px;">
+        <small style="margin-bottom: 50px;">Figure 5B: You'll see something like this, thusly indicating a merge conflict.</small>
+        <ol type="1">
+            <li>Open the file in your preferred IDE.</li>
+            <li>Notice the different colors. They indicate the different versions of the file, along with their commit ids. Go ahead and edit the file as you normally would, getting rid of the lines that say <span class="code">"&lt;&lt;&lt;&lt;&lt;&lt;&lt;head"</span> and any lines that would not compile.</li>
+            <li>Save the file, and go back to the GitHub Desktop window.</li>
+            <li>In the GitHub Desktop Window, click "Commit Merge".</li>
+            <li>Once the popup disappears, do a push like normal.</li>
+        </ol>
+        <img id="img2" src="../../img/5-3_mergeConflict_terminal.png" alt="new Repository"
+            style="width:100%;max-width:500px;margin-top: 50px;">
+        <small style="margin-bottom: 50px;">Figure 5D: I tried to commit and push but Git also noticed here that there is a problem.</small>
+        <p>The steps to fix this are similar, just in the terminal environment.</p>
+        <ol type="1">
+            <li>Do the <span class="code">git pull</span> command.</li>
+            <li>Now we want to settle the changes by editing the file. To do this, type in <span class="code">nano fileName.fileExtension</span>, which in my case is <span class="code">nano hello.py</span></li>
+            <li>Just like before, get rid of any lines that would cause your file not to compile, as well as any changes that you do not want to have in the final product. To exit, do (on mac and windows) CTRL+X, then Y, then return/enter.</li>
+            <li>Commit and Push as usual. The order is <span class="code">git add --all</span>,<span class="code">git commit -m "messageGoesHere"</span>, and <span class="code">git push</span></li>
+        </ol>
+        <p><BR>Congrats! You have navigated the world of merge conflicts with flying colors! This was hard I know, so let's take a break and review on the next page.</p>
     </div>
     <div id="navbuttons">
-        <a href=""><button id="previous">Previous Page</button></a>
-        <a href=""><button id="next">Next Page</button></a>
+        <a href="5-2.html"><button id="previous">Previous Page</button></a>
+        <a href="5-R.html"><button id="next">Next Page</button></a>
     </div>
     <div id="footer">
-        <a href="https://docs.google.com/document/d/11JvraVtRNpFEnLHPJOL6NX4Ilss-Lloz9R_Cd6X8nm0/edit?usp=sharing">See the google doc I made already here.</a>
+        <a href="https://docs.google.com/document/d/11JvraVtRNpFEnLHPJOL6NX4Ilss-Lloz9R_Cd6X8nm0/edit?usp=sharing">See
+            the google doc I made already here.</a>
         <p> Faiq Ashraf made this website as a way to teach GitHub in an easy to digest way.</p>
-        <p><a href="mailto:gittinggood0@gmail.com"> If you found an error in this website, or just have topic suggestions, email Faiq here.</a></p>
+        <p><a href="mailto:gittinggood0@gmail.com"> If you found an error in this website, or just have topic
+                suggestions, email Faiq here.</a></p>
         <small>All mentions to GitHub and its products are copyrights of GitHub Inc.</small>
     </div>
 </body>
+
 </html>
