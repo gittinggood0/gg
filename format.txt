@@ -1,4 +1,4 @@
-this is a reference as to how I chose to format diffrent things on this repository
+this is a reference as to how I chose to format different things on this repository
 
 ALL IMG SRC ARE ="../../img/<IMAGENAME>"
 
@@ -10,7 +10,7 @@ IMAGE AND CAPTION
 template.html is a template (duh) for lesson pages
 ?-Q.html is a template (again, duh) for quiz pages
 
-pages are named based on their seciton in the book
+pages are named based on their section in the book
 X-Y_<sectionTitleFromTableOfContents>.HTML where X = chapter number and Y = section number
 
 All pages use style.css
