@@ -12,10 +12,28 @@ let questions = [
       c: "Both of them can be used on Windows.",
       d: "None of them can be used on Windows.",
     },
-    correct: "b",
+    correct: "d",
   },
   {
-    question: "T/F Merge Conflicts can only occur between 2 locations. For example you cannot have a merge conflict between your local machine, github.com, and your server.",
+    question: "On a Mac, _______ is what we use to browse files locally (or even server-side) while _______ is what we use to browse files server-side only.",
+    answers: {
+      a: "Terminal/CyberDuck",
+      b: "CyberDuck/Terminal",
+    },
+    correct: "a",
+  },
+  {
+    question: "CyberDuck is most similar to what program on a Mac?",
+    answers: {
+      a: "Safari",
+      b: "TextEdit",
+      c: "Finder",
+      d: "Terminal",
+    },
+    correct: "c",
+  },
+  {
+    question: "T/F It is ok to manually upload files server-side so long as I do a git pull locally.",
     answers: {
       a: "True",
       b: "False",
@@ -23,40 +41,22 @@ let questions = [
     correct: "b",
   },
   {
-    question: "Which of the following IS NOT a way to prevent merge conflicts?",
+    question: "What command do we use to open a connection in Terminal?",
     answers: {
-      a: "Git Pull before and after working",
-      b: "Working on a file at a different time",
-      c: "Pushing Frequently",
-      d: "All of the above are great ways to prevent merge conflicts",
+      a: "cd",
+      b: "logout",
+      c: "mkdir",
+      d: "ssh",
     },
     correct: "d",
   },
   {
-    question: "When a merge conflict is made, it is because Git sees ____ different versions of a file.",
+    question: "When I am finished working through a connection that is made server-side in Terminal, what command do I use to close the connection?",
     answers: {
-      a: "2",
-      b: "3",
-      c: "multiple",
-    },
-    correct: "c",
-  },
-  {
-    question: "Which of the following IS NOT a step of resolving a merge conflict?",
-    answers: {
-      a: "Delete any lines that will not compile",
-      b: "Deleting the commit IDs attached with each line",
-      c: "Delete the file in its entirety and create a new one using the same name",
-      d: "All of the above are steps needed to be done in order to resolve a merge conflict.",
-    },
-    correct: "c",
-  },
-  {
-    question: "In terminal, when you are done editing a file, what is the sequence of key strokes that you need to do in order to save changes.",
-    answers: {
-      a: "Y,Return/Enter,CTRL+X",
-      b: "CTRL+X,Y,Return/Enter",
-      c: "CTRL+X,Return/Enter,Y",
+      a: "cd",
+      b: "logout",
+      c: "mkdir",
+      d: "ssh",
     },
     correct: "b",
   },

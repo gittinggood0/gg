@@ -14,7 +14,7 @@
 }
 .chapter{
     font-size: 20pt;
-    line-height: 75px;
+    /* line-height: 0px; */
     color:whitesmoke;
 }
 li{
