@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gitting Good X-X: TITLE</title>
+    <title>Gitting Good 7-1: WinSCP</title>
     <!-- font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
     <!-- general styling -->
     <link rel="stylesheet" href="../../css/style.css">
 </head>
+
 <body>
     <div id="header">
         <a href="../../index.html">
@@ -19,20 +21,60 @@
         <p id="subtitle"> A more simplified way to understand GitHub.</p>
         <p id="toc"> <a href="../../tableOfContents.html"> Table of Contents </a> </p>
     </div>
-    <!-- page content goes here -->
     <div class="main">
-        <h2> Lesson 0-1 </h2>
-        <h3> TITLE </h3>
+        <h2> Lesson 7-1 </h2>
+        <h3> WinSCP </h3>
+        <p>Similar to on Mac, Windows has the equivalent tools that you can use to access a remote server and work with
+            files. We will first start with WinSCP, which can be equated to CyberDuck in function.<BR><BR>
+            This program is used to transfer files between your local machine and the server you are working from. The
+            nice thing about WinSCP is that on the left side, you can browse your local machine, so wherever you choose
+            to store your files, you can look at it on the left side. The right side is the server, and it is displayed
+            in the same way as if you were using it like a computer. (See Figure 7A for an illustration of this)
+
+            <img id="img2" src="../../img/7-1_WinSCP.png" alt="new Repository"
+                style="width:100%;max-width:500px;margin-top: 50px;">
+            <small style="margin-bottom: 50px;">Figure 7A: WinSCP is basically CyberDuck for Windows, however, you can
+                view both the server and your local machine in the same window. This can be helpful when you are working
+                with multiple files or want to compare what you have locally vs on the server. </small>
+            Now let's figure out how to set WinSCP up, as well as how to use it.
+        </p>
+        <h4>First Time Setup</h4>
+        <ol type="1">
+            <li><a href="https://winscp.net/eng/download.php" target="_blank">Download and Install WinSCP</a></li>
+            <li>Go to the Login Screen and fill out the fields as provided by your iT or Instructor.</li>
+            <p><span class="iu">Here is what you need to enter if you are an IU Student:</span></p>
+            <ol type="i">
+                <li><span class="iu">Hostname: silo.luddy.indiana.edu<</span></li>
+                <li><span class="iu">Username: your IU username</span></li>
+                <li><span class="iu">Password: your IU passphrase</span></li>
+            </ol>
+            <br><BR>
+                <p><span class="iu">Duo authentication will be required before you proceed to the next step.</span></p>
+            <li>That's it! If you have done it right, you should see a screen similar to Figure 7A.</li>
+        <ol>
+            <p>To log back in after closing the window, you will have to repeat the aforementioned steps.</p>
+        <h4>Uploading/Downloading Files</h4>
+        <ol type="1">
+            <li>Login to WinSCP</li>
+            <li>On the left pane, open the local directory in which you are doing your work.</li>
+            <li>On the right pane, open the server-side directory where you are doing your work.</li>
+            <li>Drag the file from either side (for example, to upload to the server, select the file from the left) and place it in the opposing window. A status bar at the bottom should appear indicating how long it will take to upload the file.</li>
+            <p><span class="iu">If you're an IU student, you will have to do Duo authentication before the upload processes.</span></p>
+        </ol>
+        <p>That is all that there really is to WinSCP. You can see the utility of it and how it can be used to help us prevent merge conflicts.<BR><BR>Next we shall look at puTTY.</p>
     </div>
     <div id="navbuttons">
-        <a href=""><button id="previous">Previous Page</button></a>
-        <a href=""><button id="next">Next Page</button></a>
+        <a href="../6/6-Q.html"><button id="previous">Previous Page</button></a>
+        <a href="7-2.html"><button id="next">Next Page</button></a>
     </div>
     <div id="footer">
-        <a href="https://docs.google.com/document/d/11JvraVtRNpFEnLHPJOL6NX4Ilss-Lloz9R_Cd6X8nm0/edit?usp=sharing">See the google doc I made already here.</a>
+        <a href="https://docs.google.com/document/d/11JvraVtRNpFEnLHPJOL6NX4Ilss-Lloz9R_Cd6X8nm0/edit?usp=sharing">See
+            the google doc I made already here.</a>
         <p> Faiq Ashraf made this website as a way to teach GitHub in an easy to digest way.</p>
-        <p><a href="mailto:gittinggood0@gmail.com"> If you found an error in this website, or just have topic suggestions, email Faiq here.</a></p>
+        <p><a href="mailto:gittinggood0@gmail.com"> If you found an error in this website, or just have topic
+                suggestions, email Faiq here.</a></p>
         <small>All mentions to GitHub and its products are copyrights of GitHub Inc.</small>
     </div>
 </body>
+
 </html>
