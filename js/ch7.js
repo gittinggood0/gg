@@ -5,35 +5,7 @@
 // Questions
 let questions = [
   {
-    question: "Which of the following tool(s) can be used on Windows?",
-    answers: {
-      a: "Terminal",
-      b: "CyberDuck",
-      c: "Both of them can be used on Windows.",
-      d: "None of them can be used on Windows.",
-    },
-    correct: "d",
-  },
-  {
-    question: "On a Mac, _______ is what we use to browse files locally (or even server-side) while _______ is what we use to browse files server-side only.",
-    answers: {
-      a: "Terminal/CyberDuck",
-      b: "CyberDuck/Terminal",
-    },
-    correct: "a",
-  },
-  {
-    question: "CyberDuck is most similar to what program on a Mac?",
-    answers: {
-      a: "Safari",
-      b: "TextEdit",
-      c: "Finder",
-      d: "Terminal",
-    },
-    correct: "c",
-  },
-  {
-    question: "T/F It is ok to manually upload files server-side so long as I do a git pull locally.",
+    question: "T/F: Both puTTY and WinSCP are like CyberDuck in function.",
     answers: {
       a: "True",
       b: "False",
@@ -41,24 +13,50 @@ let questions = [
     correct: "b",
   },
   {
-    question: "What command do we use to open a connection in Terminal?",
+    question: "On Windows, _______ is what we use to browse files locally on one side and server side on the other, while _______ is what we use to browse files server-side only.",
     answers: {
-      a: "cd",
-      b: "logout",
-      c: "mkdir",
-      d: "ssh",
+      a: "WinSCP/puTTY",
+      b: "puTTY/WinSCP",
+    },
+    correct: "a",
+  },
+  {
+    question: "Which of the following is NOT a function of puTTY?",
+    answers: {
+      a: "Creating Files",
+      b: "Editing Files",
+      c: "Uploading Files",
+      d: "Deleting Files",
+    },
+    correct: "c",
+  },
+  {
+    question: "In WinSCP, on the left hand side of the window, I can browse _____ while on the right hand side I can browse _____.",
+    answers: {
+      a: "Local Machine/Server",
+      b: "Server/Local Machine",
+    },
+    correct: "a",
+  },
+  {
+    question: "Which of the following do we modify when we first open puTTY?",
+    answers: {
+      a: "Password",
+      b: "Port Number",
+      c: "Username",
+      d: "Hostname",
     },
     correct: "d",
   },
   {
-    question: "When I am finished working through a connection that is made server-side in Terminal, what command do I use to close the connection?",
+    question: "Which of the following are correct ways to logout from puTTY?",
     answers: {
-      a: "cd",
-      b: "logout",
-      c: "mkdir",
-      d: "ssh",
+      a: "Close the window.",
+      b: "the command 'logout'",
+      c: "Both A & B",
+      d: "Shut down my PC.",
     },
-    correct: "b",
+    correct: "c",
   },
 ];
 function createQuiz() {
