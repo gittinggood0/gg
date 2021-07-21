@@ -255,3 +255,13 @@ ul {
     color: #FFFDD0;
     font-size: 14pt;
 }
+table{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    width: 50%;
+}
+th,td{
+    border: 2pt dotted white;
+}
