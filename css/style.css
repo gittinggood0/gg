@@ -261,7 +261,9 @@ table{
     margin-right: auto;
     padding: 1em;
     width: 50%;
+    font-size: 15pt;
 }
 th,td{
     border: 2pt dotted white;
+    padding: 0.75em;
 }
