@@ -267,3 +267,10 @@ th,td{
     border: 2pt dotted white;
     padding: 0.75em;
 }
+iframe{ /* for 8-3 cheat sheet embedded on page from Google Docs*/
+    width: 750px;
+    height: 1000px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 50px;
+}
