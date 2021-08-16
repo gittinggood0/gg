@@ -5,7 +5,47 @@
 // Questions
 let questions = [
   {
-    question: "T/F: Both puTTY and WinSCP are like CyberDuck in function.",
+    question: "Which of the following characters is the starting symbol that comes before any command?",
+    answers: {
+      a: "#",
+      b: "@",
+      c: "*",
+      d: "$",
+    },
+    correct: "d",
+  },
+  {
+    question: "Which of the following is NOT able to be done in Terminal?",
+    answers: {
+      a: "Git Interactions",
+      b: "Creating/Editing Files",
+      c: "Sharing Files",
+      d: "Opening SSH connections",
+    },
+    correct: "c",
+  },
+  {
+    question: "In regards to commands, how many inputs are there for a given command?",
+    answers: {
+      a: "0",
+      b: "1",
+      c: "2",
+      d: "Anywhere from 0 or >= 1",
+    },
+    correct: "d",
+  },
+  {
+    question: "To go up a directory in Terminal, we type in ___.",
+    answers: {
+      a: "ls ../",
+      b: "cd ../",
+      c: "nano ../",
+      d: "mv ../",
+    },
+    correct: "b",
+  },
+  {
+    question: "T/F Commands are NOT case sensitive.",
     answers: {
       a: "True",
       b: "False",
@@ -13,50 +53,44 @@ let questions = [
     correct: "b",
   },
   {
-    question: "On Windows, _______ is what we use to browse files locally on one side and server side on the other, while _______ is what we use to browse files server-side only.",
+    question: "Fill in the blanks: ___ is used to see all of the files in a directory whereas ___ is used to edit a file in a given directory.",
     answers: {
-      a: "WinSCP/puTTY",
-      b: "puTTY/WinSCP",
+      a: "ls/nano",
+      b: "nano/ls",
+      c: "cat/cd",
+      d: "cd/cat",
     },
     correct: "a",
   },
   {
-    question: "Which of the following is NOT a function of puTTY?",
+    question: "Fill in the blanks: ___ is used to view the contents of a file whereas ___ is used to edit a file in a given directory.",
     answers: {
-      a: "Creating Files",
-      b: "Editing Files",
-      c: "Uploading Files",
-      d: "Deleting Files",
+      a: "ls/pwd",
+      b: "pwd/ls",
+      c: "cat/nano",
+      d: "nano/cat",
     },
     correct: "c",
   },
   {
-    question: "In WinSCP, on the left hand side of the window, I can browse _____ while on the right hand side I can browse _____.",
+    question: "Fill in the blanks: ___ is used to copy a file whereas ___ is used to rename or move a file.",
     answers: {
-      a: "Local Machine/Server",
-      b: "Server/Local Machine",
+      a: "cp/mv",
+      b: "mv/cp",
+      c: "mkdir/grep",
+      d: "grep/mkdir",
     },
     correct: "a",
   },
   {
-    question: "Which of the following do we modify when we first open puTTY?",
+    question: "Fill in the blanks: ___ is used to see the history of users in the system whereas ___ is used to change permissions of a file.",
     answers: {
-      a: "Password",
-      b: "Port Number",
-      c: "Username",
-      d: "Hostname",
+      a: "kill/tree",
+      b: "tree/kill",
+      c: "chmod/who",
+      d: "who/chmod",
     },
     correct: "d",
-  },
-  {
-    question: "Which of the following are correct ways to logout from puTTY?",
-    answers: {
-      a: "Close the window.",
-      b: "the command 'logout'",
-      c: "Both A & B",
-      d: "Shut down my PC.",
-    },
-    correct: "c",
   },
 ];
 function createQuiz() {
