@@ -43,7 +43,7 @@ let questions = [
     correct: "c",
   },*/
   {
-    question: "Eric is a student at Indiana University in Bloomington, IN (GO HOOSIERS!). He is taking a intro level coding course which asks him to store his code on GitHub. Which privacy setting should Joe use, and why?",
+    question: "Eric is a student at Indiana University in Bloomington, IN (GO HOOSIERS!). He is taking a intro level coding course which asks him to store his code on GitHub. Which privacy setting should Eric use, and why?",
     answers: {
       a: "Public, so that he can share his work with other students in his class.",
       b: "Public, so that people who google similar issues can find Eric's repository and get answers from there.",
