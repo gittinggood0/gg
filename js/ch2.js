@@ -47,8 +47,8 @@ let questions = [
     answers: {
       a: "Public, so that he can share his work with other students in his class.",
       b: "Public, so that people who google similar issues can find Eric's repository and get answers from there.",
-      c: "Private, so that only Joe and authorized collaborators (like TAs and instructors) can view the work in the repository.",
-      d: "Private, so that only Joe can view the work he has done. No need to share code with others",
+      c: "Private, so that only Eric and authorized collaborators (like TAs and instructors) can view the work in the repository.",
+      d: "Private, so that only Eric can view the work he has done. No need to share code with others",
     },
     correct: "c",
   },
